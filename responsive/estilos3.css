@@ -20,12 +20,12 @@ body{
 }
 
 header{
-	border:10px solid black;
+	border:10px solid red;
 	display:inline-block;
-	padding:20px;
+	padding:100px;
 }
 nav ul{
-	background:rgba(0,0,0,.5);
+	background:rgba(0,0,0,40);
 	font-size:0;
 	padding:0;
 }
@@ -51,12 +51,12 @@ nav ul li img{
 	width:80%;
 }
 #contenedor{
-	background:gray;
-	margin:0 auto;
+	background:white;
+	margin: auto;
 	max-width:700px;
 }
 #webs{
-	background:gray;
+	background:red;
 	padding:20px;
 	text-align:center;
 }

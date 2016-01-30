@@ -1,0 +1,47 @@
+commit f3a6462512831db8a2570be20349dbbaae9b8766
+Author: Erik rodriguez <erikgrl@hotmail.com>
+Date:   Fri Dec 18 18:20:28 2015 -0600
+
+    borrando imagen predeterminada de porta de pagina y colocando imagen erikformal
+
+commit 1e33b41fcfd122a2699b42395d23881ebbea8238
+Author: Erik rodriguez <erikgrl@hotmail.com>
+Date:   Fri Dec 18 17:49:55 2015 -0600
+
+    Nueva modificacion a los titulos de html
+
+commit b01b256aec780c272ad0d22f15d60bbe3f38e318
+Author: Leonidas Esteban <leonidasesteban@gmail.com>
+Date:   Thu May 24 17:33:12 2012 -0500
+
+    curso en vivo de responsive design en mejorando.la
+
+commit d0290fcd498d8cf2065c71a984f44ad5c673c566
+Author: Leonidas Esteban <leonidasesteban@gmail.com>
+Date:   Thu May 10 05:15:17 2012 -0500
+
+    responsive design column drop
+
+commit 1a604fba9c8cf9d2222e726999d635fcb75a6f98
+Author: Leonidas Esteban <leonidasesteban@gmail.com>
+Date:   Thu Apr 26 13:03:54 2012 -0500
+
+    renombrando estilos.css gracias a antonionavajas
+
+commit efda524802bc77177e22dbf36ee4217daedc4132
+Author: Leonidas Esteban <leonidasesteban@gmail.com>
+Date:   Wed Apr 25 06:05:13 2012 -0500
+
+    codigo del video para mostly fluid
+
+commit 509b448c544a4ca8da33fbe33f57da20dedf1364
+Author: Leonidas Esteban <leonidasesteban@gmail.com>
+Date:   Wed Apr 25 01:33:43 2012 -0500
+
+    patron 1 de responsive design
+
+commit 2dd944bf32ad038c8d9aa4bbd69eca7850672abb
+Author: Leonidas Esteban <leonidasesteban@gmail.com>
+Date:   Wed Apr 18 16:47:45 2012 -0700
+
+    initial commit

@@ -9,28 +9,37 @@ articulos:#ccc;
 }
 
 body{
-	background-image: url ('Kitty.jpg');
+	background-image: url(../img/kitty.jpg);
     background-position: center center;
     background-repeat: no-repeat;
-     background-attachment: fixed;
-     background-size: cover;
-    background-color: #464646;
-   
-    
+    background-size: cover;
+    }
+    img{
+    	margin-left:100px;
+    	margin-right:70px;
+    	margin-bottom:10px;
+    	margin-top: 10px;
+    	width:20%;
+    }
+
+h1{
+color:blue;
+}
+h2{
+	color:blue;
 }
 
 header{
-	border:10px solid black;
 	display:inline-block;
-	padding:20px;
+	padding:30px;
 }
 nav ul{
-	background:rgba(0,0,0,.5);
+	background-color:rgba(0, 0, 0, 0.5);
 	font-size:0;
 	padding:0;
 }
 nav ul li{
-	box-sizing:border-box;
+	
 	display:inline-block;
 	font-size:16px;
 	padding:10px;
@@ -51,13 +60,13 @@ nav ul li img{
 	width:80%;
 }
 #contenedor{
-	background:gray;
+	background-color:rgba(0, 0, 0, 0.6);
 	margin:0 auto;
-	max-width:700px;
+	max-width:900px;
 }
 #webs{
-	background:gray;
-	padding:20px;
+	background-color:rgba(0, 0, 0, 0.5);
+	padding:50px;
 	text-align:center;
 }
 #webs article{
@@ -102,3 +111,21 @@ nav ul li img{
 		margin:10px 0;
 	}
 		}
+a:link{
+	color:white; 
+}
+a:visited{
+    color:red;
+}
+a:hover{
+    color:orange;
+}
+a:active{
+    color:purple;
+}
+legend{
+	font-weight: 700;
+}
+label{
+	color:beige;
+}

@@ -56,7 +56,7 @@
            	<div class="carousel-inner">
            	 	<div class="item active">
            	 		<div class="overlay-slide">
-           	 			<img src="" id="p5" class="img-responsive">
+           	 			<img src="thinking.jpg" id="think" class="img-responsive">
            	 		</div>
            	 		<div class="carousel-caption">
                	 		<div class="col-md-12 col-xs-12 text-center">
@@ -164,22 +164,25 @@
 
 
 </header>
+<form id="formulario" method="POST" action= "contacto.php" >
 <h2 id="form">FORMULARIO DE CONTACTO</h2>
-        <p><label>Primer nombre<input type="text"></label></p>
-         <p><label>Apellidos<input type="text"></label></p>
-         <p><label>Numero de telefono<input type="text"></label></p>
-         <p><label>Email<input type="text"></label></p>       
+        <p><label>Primer nombre<input type="text" name="nombre" id="box"></label></p>
+         <p><label>Apellidos<input type="text" name="ape" id="box"></label></p>
+         <p><label>Numero de telefono<input type="text" name="tel" id="box"></label></p>
+         <p><label>Email<input type="text" name="mail" id="box"></label></p>       
         <p><label>Comentarios finales</label></p>
-        <textarea></textarea>
+        <textarea name="mensaje" id="box"></textarea>
         <p><button type="submit"name="coments">Enviar comentarios</button></p>
-        
-        <fieldset>
+         <fieldset>
             <legend id="unico">¿Que tanto te gusto mi pagina?</legend>
 
-            <label><input type="radio"name="love-css">Mucho</label>
-            <label><input type="radio"name="love-css">Regular</label>
-            <label><input type="radio"name="love-css">Poco</label>
+            <label><input type="radio"name="mucho">Mucho</label>
+            <label><input type="radio"name="regular">Regular</label>
+            <label><input type="radio"name="suerte la proxima">Poco</label>
         </fieldset>
+        </form>
+        
+       
 </body>
 
 </html>

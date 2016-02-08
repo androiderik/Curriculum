@@ -21,6 +21,20 @@ body{
     	margin-top: 10px;
     	width:20%;
     }
+
+
+    #box{
+    	outline-color: red;
+    	color:red;
+
+    }
+    #think{
+    margin-left:0px;
+
+
+    }
+
+
     #destacadas{
     	margin-left: 110px;
     	margin-right: 90px;

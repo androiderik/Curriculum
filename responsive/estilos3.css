@@ -15,18 +15,34 @@ body{
     background-size: cover;
     }
     img{
-    	margin-left:100px;
+    	margin-left:220px;
     	margin-right:70px;
     	margin-bottom:10px;
     	margin-top: 10px;
     	width:20%;
     }
+    #destacadas{
+    	margin-left: 110px;
+    	margin-right: 90px;
+    	width:100px;
+    	height:100px;
 
+    } 
+    #unico{
+    	color: beige;
+    }
+     fieldset{
+     width: 500px;
+     margin-top:90px; 
+
+}
 h1{
 color:blue;
+margin-top:50px;
 }
 h2{
 	color:blue;
+	
 }
 
 header{
@@ -34,9 +50,13 @@ header{
 	padding:30px;
 }
 nav ul{
-	background-color:rgba(0, 0, 0, 0.5);
+	background-color:rgba(0, 0, 0, 0.3);
 	font-size:0;
-	padding:0;
+	padding:0px;
+	margin-left:200px;
+	margin-right:100px;
+	height: 50px;
+	max-width: 950px;
 }
 nav ul li{
 	
@@ -60,23 +80,26 @@ nav ul li img{
 	width:80%;
 }
 #contenedor{
-	background-color:rgba(0, 0, 0, 0.6);
+	background-color:rgba(0, 0, 0, 0.4);
 	margin:0 auto;
-	max-width:900px;
+	max-width:950px;
+
+	height: 0 auto;
 }
 #webs{
-	background-color:rgba(0, 0, 0, 0.5);
+	background-color:rgba(0, 0, 0, 0.4);
 	padding:50px;
 	text-align:center;
+	max-width: 900px;
 }
 #webs article{
 	background:#ccc;
-	border:1px solid white;
+	border:5px solid white;
 	color:black;
 	display:inline-block;
-	margin:10px;
-	padding:10px;
-	width:150px;
+	margin:30px;
+	padding:1px;
+	width:300px;
 }
 #webs article img{
 	-webkit-transition:.2s;
@@ -125,7 +148,40 @@ a:active{
 }
 legend{
 	font-weight: 700;
+	height: 30px;
 }
 label{
 	color:beige;
+	font-family:times;
+}
+input{
+    border:none;
+    padding:4px;
+    margin-left: 15px;
+    margin-top: 15px;
+    }
+    #portafolio{
+    	padding-right:100px;
+    }
+    #contacto{
+    	padding-right:350px;
+    }
+#form{
+margin-bottom:30px;
+margin-top:50px;
+font-family:times;
+padding-bottom: 0px;
+}
+
+#p5{
+	padding-right: 500px;
+}
+
+
+textarea{
+   background-color: beige;
+    border: none;
+    padding-right:300px;
+    padding-bottom: 100px;
+    font-style: oblique;
 }

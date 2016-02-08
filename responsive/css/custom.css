@@ -355,10 +355,11 @@ ul.navbar-nav > .active > a{
    height: 800px;
    width: 100%;
    overflow:hidden;
+   padding-top:0px;
 }
 
 .carousel-caption{
-    top: 30%;
+    top: 15%;
     margin-top: -50px;
     text-shadow:none!important;
     left:9%;
@@ -471,7 +472,7 @@ ul.navbar-nav > .active > a{
     -ms-transition: all 500ms ease;
     -o-transition: all 500ms ease;
     transition: all 500ms ease;
-    border-radius: 50%;
+    border-radius: 40%;
     width: 50px;
     height: 50px;
 }
@@ -503,14 +504,14 @@ ul.navbar-nav > .active > a{
     width: 100%;
 }
 .overlay-slide:after{
-    background: url("../images/banner/overaly.png");
-    position: absolute;
+    background-image: url(../img/logotics.jpg);
+    position:absolute;
     content: "";
     z-index: 3;
     top: 0px;
     bottom: 0px;
     left: 0px;
-    right: 0px;
+    right: 80px;
 }
 .overlay-slide img{
     /*opacity:.6;*/

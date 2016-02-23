@@ -504,7 +504,6 @@ ul.navbar-nav > .active > a{
     width: 100%;
 }
 .overlay-slide:after{
-    background-image: url(../img/logotics.jpg);
     position:absolute;
     content: "";
     z-index: 3;
@@ -2632,4 +2631,18 @@ iframe{
     background: #EE3B24;
     right: 10px;
     top: -10px;
+}
+#fontcolor{
+color:;
+
+}
+#fontcolorh3{
+    color:red;
+}
+
+.pperfil{
+    
+    text-align: center;
+    
+
 }

@@ -3,15 +3,15 @@
 	require 'Conexion.php';
 	require 'phpmailer/PHPMailerAutoload.php';
 	require 'phpmailer/class.pop3.php';
-
-	/*function enviaMail($mail,$nombre,$mensaje){
+/*
+	function enviaMail($mail,$nombre,$mensaje){
 		//Envia Mail
 		$mail = new PHPMailer;
 
 		$mail->SMTPDebug = 3;
 
 		$mail->isSMTP();
-		$mail->Host = '';
+		$mail->Host = 'Gmail';
 		$mail->SMTPAuth = true;
 		$mail->Username = 'marketing@quality.com.mx';
 		$mail->Password = 'Accion559';
@@ -36,7 +36,10 @@
 		}
 
 	    }
-	    */
+	   
+*/
+
+
 	    	//Mail checker
 	function checkMail($mail){
 if(preg_match("/^[_\.0-9a-zA-Z-]+@([0-9a-zA-Z][0-9a-zA-Z-]+\.)+[a-zA-Z]{2,6}$/i", $mail))
@@ -50,7 +53,6 @@ return false;
 
 
 				if(isset($_POST['nombre']) && !empty($_POST['nombre']) AND
-				   isset($_POST['ape']) && !empty($_POST['ape']) AND
 				   isset($_POST['tel']) && !empty($_POST['tel']) AND
 				   isset($_POST['mail']) && !empty($_POST['mail']) AND
 				   isset($_POST['mensaje']) && !empty($_POST['mensaje']))
@@ -59,18 +61,19 @@ return false;
 					
 					$mail = mysqli_real_escape_string($db,$_POST['mail']);
 					$nombre = mysqli_real_escape_string($db,$_POST['nombre']);
-					$ape = mysqli_real_escape_string($db,$_POST['ape']);
-					$tel = mysqli_real_escape_string($db,$_POST['tel']);
+				    $tel = mysqli_real_escape_string($db,$_POST['tel']);
 					$mensaje = mysqli_real_escape_string($db,$_POST['mensaje']);
 
 
 
-					if  (checkMail($mail)){
-	$sql="INSERT INTO contactoscurri (`id`, `nombre`, `ape`, `tel`,`email`, `mensaje`) VALUES
-	('','$nombre','$ape','$tel','$mail','$mensaje')";
+					if(checkMail($mail)){
+	$sql="INSERT INTO contactoscurri (`id`, `nombre`,`tel`,`email`, `mensaje`) VALUES
+	('','$nombre','$tel','$mail','$mensaje')";
     $saveDB = mysqli_query($db, $sql);
 	if($saveDB){
-		echo "Datos guardados";
+		echo "<div id='AjaxAction'><script>document.getElementById('curriform').reset(); </script> 
+							<script>sweetAlert('¡Gracias!','Datos guardados', 'success'); </script></div>";
+
 
 
 	//*enviaMail($nombre,$mail,$mensaje);
@@ -78,18 +81,22 @@ return false;
     }
 
 	else{
-	echo "Error no se guardo en base de datos. \n \n";
+	echo "<div id='AjaxAction'>
+						<script>sweetAlert('Error','Ocurrio un error en la base de datos','error'); </script></div>"; 
 	echo   mysqli_error($db);
+
 		}
 	}
      else{
 
-    echo "Introduce un mail valido porfavor";
+    echo "<div id='AjaxAction'> 
+						 	<script>sweetAlert('Error','Error mail invalido','error'); </script></div>";
 		 }
 		}
 
 		else{
-			echo "Debes completar todos los campos";
+			echo "<div id='AjaxAction'> 
+						 	<script>sweetAlert('Error','Datos incompletos','error'); </script></div>";
 		}
  ?>
  

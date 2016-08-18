@@ -3,28 +3,31 @@
 	require 'Conexion.php';
 	require 'phpmailer/PHPMailerAutoload.php';
 	require 'phpmailer/class.pop3.php';
-/*
-	function enviaMail($mail,$nombre,$mensaje){
-		//Envia Mail
+
+	function enviaMail($nombre,$email,$mensaje,$telefono){
+		//Envia Mail Admin
 		$mail = new PHPMailer;
-
-		$mail->SMTPDebug = 3;
-
+		// $mail->SMTPDebug = 3;
 		$mail->isSMTP();
-		$mail->Host = 'Gmail';
+		$mail->Host = 'smtp.gmail.com';
 		$mail->SMTPAuth = true;
-		$mail->Username = 'marketing@quality.com.mx';
-		$mail->Password = 'Accion559';
+		$mail->SMTPSecure = 'tls'; // Enable TLS encryption, `ssl` also accepted
+		$mail->Username = 'erik.genaro@gmail.com';
+		$mail->Password = 'V360w800@';
 		$mail->Port = 587;
-		$mail->setFrom('marketing@quality.com.mx','Contacto Quality');  
-		$mail->addAddress($mail,$nombre,$mensaje);
+		$mail->setFrom('erik.genaro@gmail.com','Contacto ERIK');  
+		$mail->addAddress('erik.genaro@gmail.com');
+
 		$mail->isHTML(true);
 		$mail->CharSet = 'UTF-8';
-		$mail->Subject = 'Gracias por tu interés'; 
-		$mail->Body = "Alguien se ha registrado en el landing de Autoefectivo con los siguientes datos
-                          Nombre: ".$name."
-                          Email: ".$mail."
-                          Mensaje: ".$mensaje;
+		$mail->Subject = 'Nuevo contacto a tu curriculum'; //Gracias por tu interés 
+		$mail->Body = "Alguien se ha registrado en el landing de tu Curriculum con los siguientes datos<br>
+                          Nombre: ".$nombre."<br>"
+                          ."Telefono: ".$telefono."<br>"
+                          ."Correo: ".$email."<br>"
+                          ."Mensaje: ".$mensaje;
+        $mail->Body = str_replace('\r\n','<br>', $mail->Body ); //reemplaza los espacios predeterminados en el body por un salto real de linea con br, y el tercer parametro indica donde se hara ese reemplazo es decir en el body--                  
+
 
 		
 		if(!$mail->send()) {
@@ -32,12 +35,43 @@
 			echo 'Mailer Error: ' . $mail->ErrorInfo;
 
 		} else{
-			echo 'mensaje enviado';
+			echo 'Correo enviado';
+		}
+
+	    
+
+	    //Envia Mail User
+		$mail = new PHPMailer;
+		// $mail->SMTPDebug = 3;
+		$mail->isSMTP();
+		$mail->Host = 'smtp.gmail.com';
+		$mail->SMTPAuth = true;
+		$mail->SMTPSecure = 'tls'; // Enable TLS encryption, `ssl` also accepted
+		$mail->Username = 'erik.genaro@gmail.com';
+		$mail->Password = 'V360w800@';
+		$mail->Port = 587;
+		$mail->setFrom('erik.genaro@gmail.com','ERIK DEV');  
+		
+		$mail->addAddress($email);
+		$mail->isHTML(true);
+		$mail->CharSet = 'UTF-8';
+		$mail->Subject = 'Gracias por ponerte en contacto  '.$nombre; //Gracias por tu interés 
+		$mail->Body = "En breve me comunicare contigo";
+        $mail->Body = str_replace('\r\n','<br>', $mail->Body ); //reemplaza los espacios predeterminados en el body por un salto real de linea con br, y el tercer parametro indica donde se hara ese reemplazo es decir en el body--                  
+
+
+		
+		if(!$mail->send()) {
+			echo 'Message could not be sent.';
+			echo 'Mailer Error: ' . $mail->ErrorInfo;
+
+		} else{
+			echo 'Correo enviado';
 		}
 
 	    }
 	   
-*/
+
 
 
 	    	//Mail checker
@@ -71,6 +105,7 @@ return false;
 	('','$nombre','$tel','$mail','$mensaje')";
     $saveDB = mysqli_query($db, $sql);
 	if($saveDB){
+		enviaMail($nombre,$mail,$mensaje,$tel);
 		echo "<div id='AjaxAction'><script>document.getElementById('curriform').reset(); </script> 
 							<script>sweetAlert('¡Gracias!','Datos guardados', 'success'); </script></div>";
 

@@ -37,8 +37,8 @@
 	
 	/*main Slider*/
 	#slider_part {
-    	height: 530px;
-    	margin-top: 70px;
+    height: 453px;
+    margin-top: 70px;
 	}
 	.carousel-caption {
     	top: 30%;
@@ -171,8 +171,8 @@
 	}
 	/*main Slider*/
 	#slider_part {
-    	height: 250px;
-    	margin-top: 75px;
+    height: 225px;
+    margin-top: 73px;
 	}
 	.carousel-caption {
     	top: 20%;
@@ -214,7 +214,7 @@
 	}
 
 	.feature_title {
-    	width: 60%;
+    	width: 49%;
     	font-size: 30px;
 	}
 	.feature_content .btn-main{

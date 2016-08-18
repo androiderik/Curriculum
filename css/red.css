@@ -88,7 +88,7 @@ ul.navbar-nav > .active> a:hover{
 
 /*service area
 =========================*/
-.feature_content i,.feature_content h5,.feature_content a{
+.feature_content i,.feature_content h5{
     color:#000!important;
 }
 .feature_content a:hover{
@@ -260,7 +260,7 @@ figcaption .links a:hover{
 }
 
 .feature_content a{
-    border:1px solid#EE3B24;
+    border:0px solid#EE3B24;
 }
 .feature_content a:hover{
     background: #EE3B24;

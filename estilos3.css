@@ -29,6 +29,7 @@ body{
     }
     #think{
     margin-left:0px;
+    margin-top:0px;
 
 
     }
@@ -151,7 +152,7 @@ a:link{
 	color:white; 
 }
 a:visited{
-    color:red;
+    color:white;
 }
 a:hover{
     color:orange;
@@ -173,12 +174,12 @@ input{
     margin-left: 15px;
     margin-top: 15px;
     }
-    #portafolio{
-    	padding-right:100px;
-    }
-    #contacto{
-    	padding-right:350px;
-    }
+#portafolio{
+padding-right:100px;
+}
+#contacto{
+padding-right:350px;
+}
 #form{
 margin-bottom:30px;
 margin-top:50px;
@@ -187,14 +188,26 @@ padding-bottom: 0px;
 }
 
 #p5{
-	padding-right: 500px;
+padding-right: 500px;
 }
 
 
 textarea{
-   background-color: beige;
-    border: none;
-    padding-right:300px;
-    padding-bottom: 100px;
-    font-style: oblique;
+background-color: beige;
+border: none;
+padding-right:300px;
+padding-bottom: 100px;
+font-style: oblique;
+}
+#fontcolor{
+color:white;
+
+}
+#fontcolorh3{
+color:red;
+}
+
+.pperfil{
+
+text-align: center;
 }

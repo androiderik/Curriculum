@@ -63,36 +63,7 @@ header{
 	display:inline-block;
 	padding:30px;
 }
-nav ul{
-	background-color:rgba(0, 0, 0, 0.3);
-	font-size:0;
-	padding:0px;
-	margin-left:200px;
-	margin-right:100px;
-	height: 50px;
-	max-width: 950px;
-}
-nav ul li{
-	
-	display:inline-block;
-	font-size:16px;
-	padding:10px;
-	height:50px;
-	text-align:center;
-	vertical-align: top;
-	width:25%;
-}
-nav ul li:hover{
-	background:rgba(0,0,0,.3);
-}
-nav ul li a{
-	color:white;
-	text-transform:uppercase;
-}
-nav ul li img{
-	height:auto;
-	width:80%;
-}
+
 #contenedor{
 	background-color:rgba(0, 0, 0, 0.4);
 	margin:0 auto;

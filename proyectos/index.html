@@ -16,19 +16,12 @@
         <link rel="stylesheet" href="../css/font-awesome.min.css"/>
         <!-- Animation -->
         <link rel="stylesheet" href="../css/animate.min.css" />
-        <!-- Owl Carousel -->
-        <link rel="stylesheet" href="../css/owl.carousel.css"/>
-        
-        <link rel="stylesheet" href="../css/owl.theme.css"/>
-        <!-- Pretty Photo -->
-        <link rel="stylesheet" href="../css/prettyPhoto.css"/>
         <!-- Main color style -->
         <link rel="stylesheet" href="../css/red.css"/>
         <!-- Template styles-->
         <link rel="stylesheet" href="../css/custom.css" />
         <!-- Responsive -->
         <link rel="stylesheet" href="../css/responsive.css" />
-        <link rel="stylesheet" href="../css/jquery.fancybox.css?v=2.1.5" type="text/css" media="screen" />
         <!-- Sweet Alert-->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/1.1.3/sweetalert.min.css">
 
@@ -39,12 +32,48 @@
 
   <body>
 
+  <header class="container-fluid">
+<!--   <div class="row" id="header">
+      <div class="col-sm-3">
+        <img src="img/menu-icon.png" alt="" id="icono">
+      </div>
+      <div class="col-sm-6">
+        <img src="img/logo.png" alt="" id="logo">
+      </div>
+      <div class="col-sm-3">
+        <img src="img/lupa.png" alt="" id="lupa"> 
+      </div>
+    </div>  -->
+    <nav class="navbar navbar-default" id="menuGrl">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+        
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#menu" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+        </div>
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="menu">
+     <!--      <a href="#header"><img src="nodejs.png" alt="noders" ></a> -->
+          <ul id="menu-list" class="nav navbar-nav">
+            <li><a href="../index.html" id="Contacto" >CONTACTO<span class="sr-only">(current)</span></a></li>
+            <li><a href="../index.html" id="Perfil">MI PERFIL</a></li>
+            <li><a href="../index.html" id="Educacion">EDUCACIÓN</a></li>
+            <li><a href="#" id="Projects">PROYECTOS</a></li>
+          </ul>
+        </div>
+    </nav>
+  </header>
+
 
     <body class="demo-2">		
-  <div class="container">
+  <div class="container" id="portf">
 			<!-- Top Navigation -->
 			 <div class="feature_header text-center">
-        <h1 class="feature_title"><a  href="http://tympanus.net/codrops/2014/01/07/shape-hover-effect-with-svg/">Proyectos Colaborados en Concept Haus</a></h1>
+        <h1  class="feature_title"><a>Proyectos Colaborados en ConceptHaus</a></h1>
 			 </div>
 			 <div class="divider"></div>
 			<section id="grid" class="grid clearfix">
@@ -87,104 +116,159 @@
 		<div id="divh"></div>
 		<div id="divhk"></div>
 		<div id="divexitoI"></div>
+        
+
+        <div  class="feature_header text-center" >
+        <h1 class="feature_title">
+        <img src="../img/yt.png" alt="youtube"><p class="moonAPI" >API</p>
+         <p class="moon">Mi canal en YouTube dedicado a brindar tutoriales de apps en android y tecnología</p>
+        </h1> 
+        </div>
+
+
+         <div id="response" class="feature_header text-center" >
+        </div>
+            <!-- <div id="carousel" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="#carousel" data-slide-to="0" class="active"></li>
+                <li data-target="#carousel" data-slide-to="1"></li>
+                <li data-target="#carousel" data-slide-to="2"></li>
+            
+            
+            </ol>
+            <div id="slider-home" class="carousel-inner" role="listbox" >
+                <div class="item active">
+                    <img src="img/slider11.jpg" alt="">
+                </div>
+                <div class="item">
+                    <img src="img/slider22.jpg" alt="">
+                </div>
+                <div class="item">
+                    <img src="img/slider33.jpg" alt="">
+                </div>
+            </div>
+            <a class="left carousel-control" href="#carousel" role="button" data-slide="prev">
+                <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="right carousel-control" href="#carousel" role="button" data-slide="next">
+                <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+    <br><br>
+
+
+ -->
+        
 
 
 
 
 		<!-- Footer Area Start -->
-	<section id="footer">
-    <div class="footer_top">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-3 col-sm-6 col-xs-12">
-                    <h3 class="menu_head">Main Menu</h3>
-                    <div class="footer_menu">
-                        <ul>
-                            <li><a href="#about">Home</a></li>
-                            <li><a href="#service">Service</a></li>
-                            <li><a href="#portfolio">Portfolio</a></li>
-                            <li><a href="#blog">Blog</a></li>
-                            <li><a href="#contact">Contact</a></li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-md-3 col-sm-6 col-xs-12">
-                    <h3 class="menu_head">Useful Links</h3>
-                    <div class="footer_menu">
-                        <ul>
-                            <li><a href="#">Terms of use</a></li>
-                            <li><a href="#">Frequently Asked Questions</a></li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-md-3 col-sm-6 col-xs-12">
-                    <h3 class="menu_head">Contact me</h3>
-                    <div class="footer_menu_contact">
-                        <ul>
-                            <li> <i class="fa fa-home"></i>
-                                <span> Puebla, lt10 mnz 347 </span></li>
-                            <li><i class="fa fa-globe"></i>
-                                <span> cel+55 44796315</span></li>
-                            <li><i class="fa fa-phone"></i>
-                                <span> erik@concepthaus.email</span></li>
-                            <li><i class="fa fa-map-marker"></i>
-                            <span> www.web.com</span></li>
-                        </ul>
-                    </div>
-                </div>
+            <section id="footer">
+            <div class="footer_top">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-3 col-sm-6 col-xs-12">
+                            <h3 class="menu_head">Menú Principal</h3>
+                            <div class="footer_menu">
+                                <ul>
+                                    <li><a href="/Curriculum/index.html">Home</a></li>
+                                   <!--  <li><a href="#service">Service</a></li> -->
+                                    <li><a href="#portf">Portafolio</a></li>
+                                    <!-- <li><a href="#blog">Blog</a></li> -->
+                                    <li><a href="/Curriculum/index.html">Contacto</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                     <!--    <div class="col-md-3 col-sm-6 col-xs-12">
+                            <h3 class="menu_head">Useful Links</h3>
+                            <div class="footer_menu">
+                                <ul>
+                                    <li><a href="#">Terms of use</a></li>
+                                    <li><a href="#">Frequently Asked Questions</a></li>
+                                </ul>
+                            </div>
+                        </div> -->
+                        <div class="col-md-3 col-sm-6 col-xs-12">
+                            <h3 class="menu_head">Contáctame</h3>
+                            <div class="footer_menu_contact">
+                                <ul>
+                                    <li> <i class="fa fa-home"></i>
+                                        <span>Ciudad de México, V.carranza</span></li>
+                                    <li><i class="fa fa-globe"></i>
+                                        <span>erik.genaro@gmail.com</span></li>
+                                    <li><i class="fa fa-phone"></i>
+                                        <span>+55 44796315</span></li>
+                                    <li><i class="fa fa-map-marker"></i>
+                                    <span>Aeropuerto internacional de la Ciudad de México</span></li>
+                                </ul>
+                            </div>
+                        </div>
 
-                <div class="col-md-3 col-sm-6 col-xs-12">
-                    <h3 class="menu_head">Tags</h3>
-                    <div class="footer_menu tags">
-                        <a href="#"> Design</a>
-                        <a href="#"> User Interface</a>
-                        <a href="#"> Graphics</a>
-                        <a href="#"> Web Design</a>
-                        <a href="#"> Development</a>
-                        <a href="#"> UX</a>
-                        <a href="#"> Bootstrap</a>
-                        <a href="#"> css</a>
-                        <a href="#"> SEO</a>
-                        <a href="#"> Wordpress</a>
+                        <div class="col-md-3 col-sm-6 col-xs-12">
+                            <h3 class="menu_head">Tags</h3>
+                            <div class="footer_menu tags">
+                                <a > Development</a>
+                                <a > JQuery</a>
+                                <a > NodeJS</a>
+                                <a > APIS</a>
+                                <a > Ajax</a>
+                                <a > UX</a>
+                                <a > Bootstrap</a>
+                                <a > Css3</a>
+                                <a > HTML5</a>
+                                <a > SEO</a>
+                                <a > Wordpress</a>
+                                <a > Php</a>
+                                <a > Laravel</a>
+                            </div>
+                        </div>
                     </div>
                 </div>
-
             </div>
-        </div>
-    </div>
 
-    <div class="footer_b">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-6 col-sm-6 col-xs-12">
-                    <div class="footer_bottom">
-                        <p class="text-block"> &copy; Copyright reserved to <span>Erik</span></p>
+            <div class="footer_b">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-6 col-sm-6 col-xs-12">
+                            <div class="footer_bottom">
+                                <p class="text-block"> &copy; Derechos reservados a <span>Erik</span></p>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-sm-6 col-xs-12">
+                            <div class="footer_mid pull-right">
+                                <ul class="social-contact list-inline">
+                                    <li> <a href="https://www.facebook.com/Lukmau5" target="_blank"><i class="fa fa-facebook"></i></a></li>
+                                    <li> <a href="https://twitter.com/Lukmau5" target="_blank"><i class="fa fa-twitter"></i></a></li>
+                                    <li> <a href="https://plus.google.com/u/0/101552164965798773808" target="_blank"><i class="fa fa-google-plus"></i> </a></li>
+                                    <li><a href="https://www.linkedin.com/in/erik-genaro-rodriguez-lazcano-991bab52?trk=nav_responsive_tab_profile_pic" target="_blank"> <i class="fa fa-linkedin"></i></a></li>
+                                    <li><a href="https://github.com/androiderik" target="_blank"> <i class="fa fa-github"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+
                     </div>
                 </div>
-                <div class="col-md-6 col-sm-6 col-xs-12">
-                    <div class="footer_mid pull-right">
-                        <ul class="social-contact list-inline">
-                            <li> <a href="https://www.facebook.com/" target="_blank"><i class="fa fa-facebook"></i></a></li>
-                            <li> <a href="https://twitter.com/" target="_blank"><i class="fa fa-twitter"></i></a></li>
-                            <li> <a href="https://plus.google.com/u/0/101552164965798773808" target="_blank"><i class="fa fa-google-plus"></i> </a></li>
-                            <li><a href="https://www.linkedin.com/nhome/" target="_blank"> <i class="fa fa-linkedin"></i></a></li>
-                            <li><a href="https://github.com/androiderik" target="_blank"> <i class="fa fa-github"></i></a></li>
-                        </ul>
-                    </div>
-                </div>
-
             </div>
-        </div>
-    </div>
-</section>
-<!-- Footer Area End -->
+            </section>
+            <!-- Footer Area End -->
 
 
 	</body>
+    <!-- JQuery -->
+    <script src="../js/jquery.js"></script><!-- Primero declarar JQuery como dependencia de las demas librerias que lo usan. -->
     <script src='http://cdnjs.cloudflare.com/ajax/libs/snap.svg/0.2.0/snap.svg-min.js'></script>
-    <script src="js/index.js"></script>
-    <script src="../js/jquery.js"></script>
 
+    <script src="js/search.js"  type="text/javascript"></script> <!-- Primero hacemos lectura del archivo js -->
+    <script src="https://apis.google.com/js/client.js?onload=onClientLoad" type="text/javascript"></script> <!-- Despues hacemos uso y peticion a la url del API de you tube -->
+    <script src="js/index.js"></script>
+     <!-- Scroll to top -->
+    <script type="text/javascript" src="../js/jquery.scrollTo.js"></script>
+
+
+        <!-- .html de mis proyectos -->
         <script type="text/javascript">
         	$('#He').click(function()
         	{
@@ -205,9 +289,31 @@
 			  "-webkit-tran sition-duration": "5s"});
 
         	});
+       
         	
         </script>
-      
+            <!--Anchors con scrollTo -->
+            <script>
+            $('#Projects').click(function() {
+            $('body').scrollTo('#portf', 800);
+            });
+            </script>
+            <!--Anchors con scrollTo -->
+
+            <!-- navbar persistente-->
+            <script>
+             $(window).on("scroll", function() {
+            if($(this).scrollTop() > 1) {
+            $("#menuGrl").addClass("navbar-fixed-top");
+            } else {
+            $("#menuGrl").removeClass("navbar-fixed-top");
+            }
+            });
+            </script>
+            <!-- navbar persistente-->
+
+
+       
 
 
     

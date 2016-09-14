@@ -3,14 +3,19 @@
 <head>
 	<meta charset="utf-8"/>
 	<meta name="viewport" content="width=device-width , initial-scale=1, maximum-scale=1"/>
+   <!--  <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
 	<title>Mi curriculum online</title>
-	<link rel="stylesheet" href="estilos3.css"/>
-           
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="faviconD.png" type="image/x-icon">
+
+	<link rel="stylesheet" href="estilos3.css"/>      
     <!-- Template styles-->
     <link rel="stylesheet" href="css/custom.css" />
      <!-- Bootstrap -->
         <link rel="stylesheet" href="css/bootstrap.min.css"/>
-        <!-- FontAwesome -->
+         <!--  FontAwesome CDN Cloud -->
+        <script src="https://use.fontawesome.com/3537530b60.js"></script>
+        <!-- FontAwesome local si cloud falla-->
         <link rel="stylesheet" href="css/font-awesome.min.css"/>
         <!-- Animation -->
         <link rel="stylesheet" href="css/animate.min.css" />
@@ -33,9 +38,45 @@
 </head>
 <body>
 
+<header class="container-fluid">
+<!--   <div class="row" id="header">
+      <div class="col-sm-3">
+        <img src="img/menu-icon.png" alt="" id="icono">
+      </div>
+      <div class="col-sm-6">
+        <img src="img/logo.png" alt="" id="logo">
+      </div>
+      <div class="col-sm-3">
+        <img src="img/lupa.png" alt="" id="lupa"> 
+      </div>
+    </div>  -->
+    <nav class="navbar navbar-default" id="menuGrl">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+        
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#menu" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+        </div>
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="menu">
+     <!--      <a href="#header"><img src="nodejs.png" alt="noders" ></a> -->
+          <ul id="menu-list" class="nav navbar-nav">
+            <li><a href="#" id="Contacto" >CONTACTO<span class="sr-only">(current)</span></a></li>
+            <li><a href="#" id="Perfil">MI PERFIL</a></li>
+            <li><a href="#" id="Educacion">EDUCACIÓN</a></li>
+            <li><a href="proyectos/index.html" id="">PROYECTOS</a></li>
+          </ul>
+        </div>
+    </nav>
+  </header>
 
 
  <!--Slider start--> 
+
 		<section id="slider_part" style="background-color:black;">
          <div class="carousel slide" id="carousel-example-generic" data-ride="carousel">
             <!-- Indicators -->
@@ -53,7 +94,7 @@
            	 		<div class="carousel-caption" id="fuentecarrousel">
                	 		<div class="col-md-12 col-xs-12 text-center">
                       <h2 id="fontcolor" class="animated fadeInUp">Curriculum</h2>
-               	 			<h3 class="animated zoomIn"> <b id="fontcolorh3"> Web Developer Jr.</b></h3>
+               	 			<h3 class="animated zoomIn"> <b id="fontcolorh3"> Web Developer Jr. Back-End</b></h3>
                	 			<div class="line"></div>
                	 			<p class="animated zoomIn">Ingeniería en tecnologías de la información y comunicaciones</p>
                	 		</div>
@@ -66,7 +107,7 @@
            	 		<div class="carousel-caption">
                	 		<div class="col-md-12 col-xs-12 text-center">
                     <h2 class="animated fadeInUp">Erik Rodriguez </h2>
-               	 			<h3 class="animated zoomIn"><b id="fontcolorh3"> Responsive Design</b></h3>
+               	 			<h3 class="animated zoomIn"><b id="fontcolorh3"> APIS</b></h3>
                	 			<div class="line"></div>
                	 			<p class="animated zoomIn">Autodidacta</p>
                	 		</div>
@@ -101,7 +142,7 @@
   	</section>
   	<!--/ Slider end -->
     <!--Informacion de mi persona -->
-<section>
+<section id="perfil">
      <div class="container">
      <div class="row">
          
@@ -126,7 +167,7 @@
 <!-- Service Area start -->
 
    <section id="service">
-        <div class="container">
+        <div class="container" id="educacion" >
                 <div class="row">
                     <div class="col-md-12 col-sm-12 col-xs-12">
                         <div class="feature_header text-center">
@@ -169,10 +210,10 @@
                                     <i class="fa fa-desktop"></i>
                                     <h5>Concept Haus Creative Agency</h5>
                                     <p>Residencias profesionales dentro de una agencia especializada en la creación, desarrollo y fortalecimiento de marca.</p>
-                        
-                                 <button  class="btn btn-main" ><a href="proyectos/index.html" target="_blank">Explorar proyectos</a></button>
-                               
+                                 <button  class="btn btn-main feature_content" ><a href="proyectos/index.html" target="_blank">Explorar proyectos</a></button>
+                                 
                                 </div>
+
                         </div> <!-- Col-md-4 Single_feature End -->
                         <!-- <button class="btn btn-main"> Read More</button> -->
                     </div>
@@ -187,20 +228,14 @@
 
 <div id="divP"></div>
 
-
-
-
 <!-- Client Carousel End -->
-
-
-
 
 <!-- Contact Area Start-->
 
 <section id="contact">
     <div class="container">
         <div class="row">
-        <div class="col-md-12 col-sm-12 col-xs-12">
+        <div id="contact" class="col-md-12 col-sm-12 col-xs-12">
                 <div class="feature_header text-center">
                     <h3 class="feature_title">Mantente en <b>contacto</b></h3>
                     <div class="divider"></div>
@@ -243,119 +278,99 @@
         </div>
     </div>
 </section> 
-
-<!--
-<form id="curriform">
-<h2 id="form">FORMULARIO DE CONTACTO</h2>
-        <p><label>Primer nombre<input type="text" name="nombre" id="box"></label></p>
-         <p><label>Numero de telefono<input type="text" name="tel" id="box"></label></p>
-         <p><label>Email<input type="text" name="mail" id="box"></label></p>       
-        <p><label>Comentarios finales</label></p>
-        <textarea name="mensaje" id="box"></textarea>
-        <p><button type="submit"name="coments">Enviar comentarios</button></p>
-         <fieldset>
-            <legend id="unico">¿Que tanto te gusto mi pagina?</legend>
-
-            <label><input type="radio"name="mucho">Mucho</label>
-            <label><input type="radio"name="regular">Regular</label>
-            <label><input type="radio"name="suerte la proxima">Poco</label>
-        </fieldset>
-        </form>
--->
-
-
-
+    <!-- Div de SWAL -->
   <div id="AjaxAction"></div>
 
-<!-- Footer Area Start -->
 
-<section id="footer">
-    <div class="footer_top">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-3 col-sm-6 col-xs-12">
-                    <h3 class="menu_head">Main Menu</h3>
-                    <div class="footer_menu">
-                        <ul>
-                            <li><a href="#about">Home</a></li>
-                            <li><a href="#service">Service</a></li>
-                            <li><a href="#portfolio">Portfolio</a></li>
-                            <li><a href="#blog">Blog</a></li>
-                            <li><a href="#contact">Contact</a></li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-md-3 col-sm-6 col-xs-12">
-                    <h3 class="menu_head">Useful Links</h3>
-                    <div class="footer_menu">
-                        <ul>
-                            <li><a href="#">Terms of use</a></li>
-                            <li><a href="#">Frequently Asked Questions</a></li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-md-3 col-sm-6 col-xs-12">
-                    <h3 class="menu_head">Contact me</h3>
-                    <div class="footer_menu_contact">
-                        <ul>
-                            <li> <i class="fa fa-home"></i>
-                                <span> Puebla, lt10 mnz 347 </span></li>
-                            <li><i class="fa fa-globe"></i>
-                                <span> cel+55 44796315</span></li>
-                            <li><i class="fa fa-phone"></i>
-                                <span> erik@concepthaus.email</span></li>
-                            <li><i class="fa fa-map-marker"></i>
-                            <span> www.web.com</span></li>
-                        </ul>
-                    </div>
-                </div>
+    <!-- Footer Area Start -->
+            <section id="footer">
+            <div class="footer_top">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-3 col-sm-6 col-xs-12">
+                            <h3 class="menu_head">Menú Principal</h3>
+                            <div class="footer_menu">
+                                <ul>
+                                    <li><a href="/Curriculum/index.html">Home</a></li>
+                                   <!--  <li><a href="#service">Service</a></li> -->
+                                    <li><a href="/Curriculum/proyectos/index.html">Portafolio</a></li>
+                                    <!-- <li><a href="#blog">Blog</a></li> -->
+                                    <li><a href="#contact">Contacto</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                     <!--    <div class="col-md-3 col-sm-6 col-xs-12">
+                            <h3 class="menu_head">Useful Links</h3>
+                            <div class="footer_menu">
+                                <ul>
+                                    <li><a href="#">Terms of use</a></li>
+                                    <li><a href="#">Frequently Asked Questions</a></li>
+                                </ul>
+                            </div>
+                        </div> -->
+                        <div class="col-md-3 col-sm-6 col-xs-12">
+                            <h3 class="menu_head">Contáctame</h3>
+                            <div class="footer_menu_contact">
+                                <ul>
+                                    <li> <i class="fa fa-home"></i>
+                                        <span>Ciudad de México, V.carranza</span></li>
+                                    <li><i class="fa fa-globe"></i>
+                                        <span>erik.genaro@gmail.com</span></li>
+                                    <li><i class="fa fa-phone"></i>
+                                        <span>+55 44796315</span></li>
+                                    <li><i class="fa fa-map-marker"></i>
+                                    <span>Aeropuerto internacional de la Ciudad de México</span></li>
+                                </ul>
+                            </div>
+                        </div>
 
-                <div class="col-md-3 col-sm-6 col-xs-12">
-                    <h3 class="menu_head">Tags</h3>
-                    <div class="footer_menu tags">
-                        <a href="#"> Design</a>
-                        <a href="#"> User Interface</a>
-                        <a href="#"> Graphics</a>
-                        <a href="#"> Web Design</a>
-                        <a href="#"> Development</a>
-                        <a href="#"> UX</a>
-                        <a href="#"> Bootstrap</a>
-                        <a href="#"> css</a>
-                        <a href="#"> SEO</a>
-                        <a href="#"> Wordpress</a>
+                        <div class="col-md-3 col-sm-6 col-xs-12">
+                            <h3 class="menu_head">Tags</h3>
+                            <div class="footer_menu tags">
+                                <a > Development</a>
+                                <a > JQuery</a>
+                                <a > NodeJS</a>
+                                <a > APIS</a>
+                                <a > Ajax</a>
+                                <a > UX</a>
+                                <a > Bootstrap</a>
+                                <a > Css3</a>
+                                <a > HTML5</a>
+                                <a > SEO</a>
+                                <a > Wordpress</a>
+                                <a > Php</a>
+                                <a > Laravel</a>
+                            </div>
+                        </div>
                     </div>
                 </div>
-
             </div>
-        </div>
-    </div>
 
-    <div class="footer_b">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-6 col-sm-6 col-xs-12">
-                    <div class="footer_bottom">
-                        <p class="text-block"> &copy; Copyright reserved to <span>Erik</span></p>
+            <div class="footer_b">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-6 col-sm-6 col-xs-12">
+                            <div class="footer_bottom">
+                                <p class="text-block"> &copy; Derechos reservados a <span>Erik</span></p>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-sm-6 col-xs-12">
+                            <div class="footer_mid pull-right">
+                                <ul class="social-contact list-inline">
+                                    <li> <a href="https://www.facebook.com/Lukmau5" target="_blank"><i class="fa fa-facebook"></i></a></li>
+                                    <li> <a href="https://twitter.com/Lukmau5" target="_blank"><i class="fa fa-twitter"></i></a></li>
+                                    <li> <a href="https://plus.google.com/u/0/101552164965798773808" target="_blank"><i class="fa fa-google-plus"></i> </a></li>
+                                    <li><a href="https://www.linkedin.com/in/erik-genaro-rodriguez-lazcano-991bab52?trk=nav_responsive_tab_profile_pic" target="_blank"> <i class="fa fa-linkedin"></i></a></li>
+                                    <li><a href="https://github.com/androiderik" target="_blank"> <i class="fa fa-github"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+
                     </div>
                 </div>
-                <div class="col-md-6 col-sm-6 col-xs-12">
-                    <div class="footer_mid pull-right">
-                        <ul class="social-contact list-inline">
-                            <li> <a href="https://www.facebook.com/" target="_blank"><i class="fa fa-facebook"></i></a></li>
-                            <li> <a href="https://twitter.com/" target="_blank"><i class="fa fa-twitter"></i></a></li>
-                            <li> <a href="https://plus.google.com/u/0/101552164965798773808" target="_blank"><i class="fa fa-google-plus"></i> </a></li>
-                            <li><a href="https://www.linkedin.com/nhome/" target="_blank"> <i class="fa fa-linkedin"></i></a></li>
-                            <li><a href="https://github.com/androiderik" target="_blank"> <i class="fa fa-github"></i></a></li>
-                        </ul>
-                    </div>
-                </div>
-
             </div>
-        </div>
-    </div>
-</section>
-<!-- Footer Area End -->
-
+            </section>
+            <!-- Footer Area End -->
 
 <!-- Back To Top Button -->
     <div id="back-top">
@@ -363,21 +378,11 @@
             <button class="btn btn-primary" title="Back to Top"><i class="fa fa-angle-up"></i></button>
         </a>
     </div>
-    <!-- End Back To Top Button -->
-
-    
-
-
-
-
-
-<!-- Javascript Files
-    ================================================== -->
-    <!-- initialize jQuery Library -->
-
+<!-- End Back To Top Button -->
+<!-- Javascript Files================================== -->
         <!-- initialize jQuery Library -->
         <!-- Main jquery -->
-            <script type="text/javascript" src="js/jquery.js"></script>
+        <script type="text/javascript" src="js/jquery.js"></script>
         <!-- Bootstrap jQuery -->
          <script src="js/bootstrap.min.js"></script>
         <!-- Owl Carousel -->
@@ -407,41 +412,69 @@
         <!-- Google Map  Source -->
                      <!-- Custom js -->
         <script src="js/custom.js"></script>
+        <!--script SweetAlert -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/1.1.3/sweetalert.min.js"></script>
+
 
 
 <!-- Ajax-->
 <script>
-        jQuery(function(){
-           var form = jQuery('form#curriform');
-           form.submit(function(e){
-               e.preventDefault();
-               dataString = form.serialize();
+      jQuery(function($){
+      var form = $('form#curriform');
+      form.submit(function(e){
+      e.preventDefault();
+      dataString = form.serialize();
 
-               jQuery.ajax({
-                   type:'POST',
-                   url:'server/contacto.php',
-                   data: dataString,
-                  beforeSend: function(){
-                      swal({   title: "Procesando",   
-                               text: "Estoy validando tus datos...", 
-                               showConfirmButton: false });
-                   },
-                   success:function(data){
-                       jQuery('#AjaxAction').replaceWith(data);
-                   },
-                   complete:function(){
+     $.ajax({
+      type:'POST',
+      url:'server/contacto.php',
+      data: dataString,
+      beforeSend: function(){
+      swal({   title: "Procesando",   
+      text: "Estoy validando tus datos...", 
+      showConfirmButton: false });
+      },
+      success:function(data){
+      $('#AjaxAction').replaceWith(data);
+      },
+      complete:function(){
 
-                   }
-               });
-               return false;
-           })
-       }) ;
+      }
+      });
+      return false;
+      })
+      }) ;
     </script>
 <!-- ajax -->
 
 
-<!--script SweetAlert -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/1.1.3/sweetalert.min.js"></script>
+
+    <!--Anchors con scrollTo -->
+    <script>
+    jQuery('#Contacto').click(function($) {
+         jQuery('body').scrollTo('#contact', 800);
+    });
+    jQuery('#Perfil').click(function() {
+        jQuery('body').scrollTo('#perfil', 800);
+    });
+    jQuery('#Educacion').click(function() {
+        jQuery('body').scrollTo('#educacion', 800);
+    });
+    </script>
+    <!--Anchors con scrollTo -->
+
+    <!-- navbar persistente-->
+    <script>
+   jQuery(window).on("scroll", function() {
+    if (jQuery(this).scrollTop() > 1) {
+    jQuery("#menuGrl").addClass("navbar-fixed-top ");
+    } else {
+    jQuery("#menuGrl").removeClass("navbar-fixed-top");
+    }
+    });
+    </script>  
+    <!-- navbar persistente -->
+
 
 </body>
 

@@ -107,17 +107,14 @@ return false;
 	if($saveDB){
 		enviaMail($nombre,$mail,$mensaje,$tel);
 		echo "<div id='AjaxAction'><script>document.getElementById('curriform').reset(); </script> 
-							<script>sweetAlert('¡Gracias!','Datos guardados', 'success'); </script></div>";
-
-
-
+							<script>swal({   title: '¡Gracias!',   text: 'Datos guardados con éxito',   type: 'success',   showCancelButton: false,   confirmButtonColor: '#62CB7E',   confirmButtonText: 'O.K',   closeOnConfirm: true }); </script></div>";
 	//*enviaMail($nombre,$mail,$mensaje);
     //header('Location: ../thankyou.html');
     }
 
 	else{
 	echo "<div id='AjaxAction'>
-						<script>sweetAlert('Error','Ocurrio un error en la base de datos','error'); </script></div>"; 
+						<script>swal({   title: 'Error',   text: 'Ocurrio un error en la base de datos',   type: 'error',   showCancelButton: false,   confirmButtonColor: '#EE3B24',   confirmButtonText: 'O.K',   closeOnConfirm: true }); </script></div>"; 
 	echo   mysqli_error($db);
 
 		}
@@ -125,13 +122,13 @@ return false;
      else{
 
     echo "<div id='AjaxAction'> 
-						 	<script>sweetAlert('Error','Error mail invalido','error'); </script></div>";
+						 	<script>swal({   title: 'Error',   text: 'E-mail inválido',   type: 'error',   showCancelButton: false,   confirmButtonColor: '#EE3B24',   confirmButtonText: 'O.K',   closeOnConfirm: true });</script></div>";
 		 }
 		}
 
 		else{
 			echo "<div id='AjaxAction'> 
-						 	<script>sweetAlert('Error','Datos incompletos','error'); </script></div>";
+						 	<script>swal({   title: 'Ojo',   text: 'Datos incompletos',   type: 'warning',   showCancelButton: false,   confirmButtonColor: '#C68A53',   confirmButtonText: 'O.K',   closeOnConfirm: true }); </script></div>";
 		}
  ?>
  
